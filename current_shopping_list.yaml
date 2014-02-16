@@ -1,0 +1,64 @@
+---
+shopping_list:
+- !ruby/object:ShoppingListItem
+  grocery_item: !ruby/object:GroceryItem
+    id: 6
+    category: Household
+    name: Detergent
+    unit_price: 10.79
+  quantity: 1
+  total: 0
+  id: 8626d680-34da-407c-b4e4-694aa4045270
+- !ruby/object:ShoppingListItem
+  grocery_item: !ruby/object:GroceryItem
+    id: 1
+    category: Bread
+    name: Premium Wholewheat
+    unit_price: 2.95
+  quantity: 1
+  total: 0
+  id: e58c7c67-ec11-4380-ad20-a9111bd99002
+- !ruby/object:ShoppingListItem
+  grocery_item: !ruby/object:GroceryItem
+    id: 3
+    category: Dairy
+    name: Whole Milk
+    unit_price: 3.45
+  quantity: 1
+  total: 0
+  id: 313ba66e-4d60-4df4-a77c-0092feec291d
+- !ruby/object:ShoppingListItem
+  grocery_item: !ruby/object:GroceryItem
+    id: 1
+    category: Bread
+    name: Premium Wholewheat
+    unit_price: 2.95
+  quantity: 1
+  total: 0
+  id: 3bb85cdf-265a-44ea-ab9e-a89be8336cfe
+- !ruby/object:ShoppingListItem
+  grocery_item: !ruby/object:GroceryItem
+    id: 2
+    category: Fish
+    name: Salmon
+    unit_price: 9.95
+  quantity: 1
+  total: 0
+  id: 81f87528-9aa4-4699-a358-6124466c9df0
+- !ruby/object:ShoppingListItem
+  grocery_item: !ruby/object:GroceryItem
+    id: 5
+    category: Bakery
+    name: Bagels
+    unit_price: 1.95
+  quantity: 1
+  total: 0
+  id: 990629da-33d2-40ee-9222-b4dc66e9b307
+- !ruby/object:ShoppingListItem
+  grocery_item: !ruby/object:GroceryItem
+    id: 1
+    category: Bread
+    name: Premium Wholewheat
+    unit_price: 2.95
+  quantity: 2
+  id: fcedfaf0-47c4-4639-a14e-876b37176b90

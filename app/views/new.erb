@@ -1,0 +1,20 @@
+
+
+
+
+<h2>Add new item to your list</h2>
+
+<a href="/">Back to grocery list</a>
+<form action="shopping" method="post">
+	<label for="grocery-item">Grocery</label>
+	<select name="grocery_item">
+		<% @grocery_items.each do |item| %>
+			<option value="<%= item.id %>"><%= item.name %></option>
+		<% end %>
+	</select>
+	
+	<label for="quantity">Qty</label>
+	<input type="number" min="1" max="10" value="1" name="quantity"></input>
+	<button type="submit">Add to list</button>
+</form>
+

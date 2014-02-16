@@ -1,0 +1,32 @@
+
+
+<h2>Your groceries</h2>
+
+<section>
+  <a href="/new">Add a new item</a>
+  <table border="0" cellspacing="5" cellpadding="5">
+  	<tr>
+	  	<th>Category</th>
+	  	<th>Name</th>
+	  	<th>Unit Price</th>
+	  	<th>Quantity</th>
+	  	<th>Total</th>
+	</tr>
+	<% @shopping_list.each do |shopping_list_item| %>
+	  	<tr>
+			<td><%= shopping_list_item.grocery_item.category %></td>
+		  	<td><%= shopping_list_item.grocery_item.name %></td>
+		  	<td><%= shopping_list_item.grocery_item.unit_price %></td>
+		  	<td><%= shopping_list_item.quantity %></td>
+		  	<td><%= shopping_list_item.total %></td>
+			<td>
+				<form method="post" action="/shopping/<%= shopping_list_item.id %>">
+					<input type="hidden" name="_method" value="delete"></input>
+					<button type="submit">Remove item</button>
+				</form>
+			</td>			
+		</tr>
+	<% end %>
+  </table>
+</section>
+
